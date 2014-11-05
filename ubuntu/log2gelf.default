@@ -1,0 +1,9 @@
+# Configuration for log2gelf upstart job
+
+LOGFILE="/var/log/syslog"
+GELF_SERVER=localhost
+GELF_PORT=12201
+
+# select a user with read access to the logfile
+# and write access to the log directory (for .state)
+SETUID="www-data"
